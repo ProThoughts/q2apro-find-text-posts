@@ -42,14 +42,14 @@
 		
 			// return if not admin level
 			$level = qa_get_logged_in_level();
-			/*
+			
 			if($level < QA_USER_LEVEL_ADMIN) 
 			{
 				$qa_content = qa_content_prepare();
 				$qa_content['custom'] = '<p>'.qa_lang('q2apro_find_text_posts_lang/not_allowed').'</p>';
 				return $qa_content;
 			}
-			*/
+			
 
 			// AJAX post: we received post data, so it should be the ajax call
 			$transferString = qa_post_text('ajaxdata');
