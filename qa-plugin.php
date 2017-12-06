@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Find Text in Posts
 	Plugin URI: http://www.q2apro.com/plugins/find-text-posts
-	Plugin Description: Plugin for admins to find text in posts
+	Plugin Description: Plugin for admins to find text in posts, also to find and replace strings.
 	Plugin Version: 0.1
 	Plugin Date: 2015-04-08
 	Plugin Author: q2apro.com
