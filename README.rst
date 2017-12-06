@@ -4,7 +4,8 @@ Question2Answer Plugin: Find Text in Posts
 -----------
 Description
 -----------
-This is a plugin_ for Question2Answer_ that finds any text in all posts and displays post creator, URL and content.
+This is a plugin_ for Question2Answer_ that finds any text in all posts and displays post creator, URL and content. 
+Find and Replace is also possible.
 
 ------------
 Installation
