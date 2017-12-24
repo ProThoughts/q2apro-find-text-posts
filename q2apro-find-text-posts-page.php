@@ -102,7 +102,7 @@
 						// save content for output
 						$postcontent = $postdata['content'];
 						
-						if($posttype=='Q')
+						if($posttype=='Q' || $posttype=='Q_HIDDEN')
 						{
 							$qTitle = $postdata['title'];
 							$questionid = $postdata['postid'];
@@ -111,11 +111,11 @@
 						else 
 						{
 							// no question, post must be A or C
-							if($posttype=='A') 
+							if($posttype=='A' || $posttype=='A_HIDDEN') 
 							{
 								$posttype_label = qa_lang('q2apro_find_text_posts_lang/answer');
 							}
-							else if($posttype=='C') 
+							else if($posttype=='C' || $posttype=='C_HIDDEN') 
 							{
 								$posttype_label = qa_lang('q2apro_find_text_posts_lang/comment');
 							}
@@ -137,13 +137,13 @@
 							
 							// questionid
 							$parenttype = $parentpost['type'];
-							if($parenttype=='Q') 
+							if($parenttype=='Q' || $parenttype=='Q_HIDDEN') 
 							{
 								// question
 								$questionid = $parentid;
 								$qTitle = $parentpost['title'];
 							}
-							else if($parenttype=='A') 
+							else if($parenttype=='A' || $parenttype=='A_HIDDEN') 
 							{
 								// answer, we need to query again to receive the question id
 								$question = qa_db_read_one_assoc( 
